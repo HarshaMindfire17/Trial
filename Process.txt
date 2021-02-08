@@ -1,11 +1,30 @@
 1. Create a git repository.
-2. Initialize git in workspace folder
-"git init"
+    Set it as current remote repository.
+	"git remote add origin https://github.com/HarshaMindfire17/Trial.git"
+2. i) Configure username and email
+	"git config --global user.name HarshaMindfire17"
+	"git config --global user.email harsham@mindfiresolutions.com"
+    ii) Verify changes
+	"git config --list"
+    iii) Remove proxy
+	"git config --global --unset http.proxy"
+2. Initialize git in working directory
+	"git init"
 3. i) Add all files to staging area
-	"git add -A"
-	"git add ."
-   ii) To remove staged files:
-	"git reset"
-4. Commit the file.
-"git commit -m 'process followed' "
-5. git remote
+	a) "git add -A"
+	b) "git add ."
+   ii) Add a few specific files
+	"git add Process.txt delete.txt"
+   iii) To remove staged files:
+	a) "git reset"
+	b) "git reset 'delete.txt' "
+4. Check status
+	"git status"
+5. Check the changes made:
+	"git diff"
+6. Commit the file.
+	"git commit -m 'process followed' "
+7. Check commits made:
+	"git log"
+8. Push the changes to remote repository.
+	"git push origin master"
