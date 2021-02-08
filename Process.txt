@@ -1,0 +1,11 @@
+1. Create a git repository.
+2. Initialize git in workspace folder
+"git init"
+3. i) Add all files to staging area
+	"git add -A"
+	"git add ."
+   ii) To remove staged files:
+	"git reset"
+4. Commit the file.
+"git commit -m 'process followed' "
+5. git remote
